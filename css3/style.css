@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2? family= Anonymous+Pro:ital,wght@0,400;0,700;1,400 & family= Bebas+Neue & family= Dancing+Script:wght@ 400;500;600;700 & família= Ótimo+Vibes & família= Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200 & display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../imgs/lobo.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    height: 100vh;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color:transparent;
+    position: fixed;
+}
+.logo img {
+    width: 130px;
+    height: 130px;
+    margin-top: -10px;
+    transition: all 0.4s;
+}
+.logo img:hover {
+    width: 100px;
+    height: 100px;
+    transition: all 0.4s;
+    transform-origin: center;
+}
+main {
+    display: grid;
+    place-items: center;
+}
+h2 {
+    font-size: 2rem;
+    font-family:"Great Vibes";
+    font-weight: 700;
+    color: #fff;
+    text-transform:normal;
+    letter-spacing: 1.4;
+    margin-top: 120px;
+    text-align: center;
+    text-decoration: underline solid #f88f2d;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 10%;
+}
+#menina {
+    color: #f88f2d;
+}
+.galeria {
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+    margin-top: -10px;
+}
+@keyframes rotate {
+    from {
+        transform: perspective(1200px) rotatey(0deg);
+    } to {
+        transform: perspective(1200px) rotatey(360deg);
+    }
+}
+.galeria span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg)) translatez(380px);
+}
+.galeria span img {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius:10px;
+    transition: all 0.2s;
+}
+.galeria span img:hover{
+    border:solid 1px #f88f2d;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+ figcaption {
+    color: #fff;
+    width: 30%;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 60px;
+    font-family: "Montserrat", sans-serif;
+    padding: 4px;
+    border-radius: 30px;
+    font-style:bolder;
+    background-color: #868686;
+    transition: all 0.2s;
+}
+figcaption:hover {
+    background-color: #f88f2d;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Great Vibes';
+    font-size: 15pt;
+    font-style: italic;
+    margin-top: 17%;
+}
+/* Aqui começa a responsividade */
+@media(max-width: 480px) {
+    body {
+    background-image: url(../imgs/lobo.png);
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    height: 100vh;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        position: fixed;
+    }
+    .logo img {
+        width: 120px;
+        height: 120px;
+        margin-top: -10px;
+        transition: all 0.4s;
+    }
+    .logo img:hover {
+        width: 100px;
+        height: 100px;
+        transition: all 0.4s;
+        transform-origin: center;
+    }
+    main {
+        display: grid;
+        place-items: center;
+    }
+    h2 {
+        font-size:18px;
+        font-family:"Great Vibes";
+        font-weight: 700;
+        color: #fff;
+        text-transform:normal;
+        letter-spacing: 1.4;
+        margin-top: 120px;
+        text-align: center;
+        text-decoration: underline solid #f88f2d;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 10%;
+    }
+    #menina {
+        color: #f88f2d;
+    }
+    .galeria {
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: rotate 20s linear infinite;
+        margin-top: -10px;
+    }
+    @keyframes rotate {
+        from {
+            transform: perspective(1200px) rotatey(0deg);
+        } to {
+            transform: perspective(1200px) rotatey(360deg);
+        }
+    }
+    .galeria span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform:rotateY(calc(var(--i) * 45deg)) translatez(380px);
+    }
+    .galeria span img {
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        object-fit:cover;
+        border-radius: 50%;
+        transition: all 0.2s;
+    }
+    .galeria span img:hover{
+        border:solid 1px #f88f2d;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    figcaption {
+        color: #fff;
+        width: 30%;
+        font-size: 10px;
+        text-align: center;
+        margin-left: 60px;
+        padding: 4px;
+        font-style:bold;
+        background-color: #868686;
+        border-radius: 30px;
+        font-family: "Montserrat", sans-serif;
+        transition: all 0.2s;
+    }
+    figcaption:hover {
+        background-color: #f88f2d;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    footer  {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+        font-family: 'Great Vibes';
+        font-size: 15pt;
+        font-style: italic;
+        margin-top: 17%;
+    }
+}
